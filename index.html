@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      #form{
+    
+        border: solid 1px;
+        width: 30%;
+        padding: 24px;
+        margin: 0 auto;
+    
+      }
+      .input{
+       padding: 12px 16px;
+       width: 30%;
+       border-radius: 5px;
+       border:solid 1px;
+    
+    
+      }
+    
+      button{
+        padding: 8px 240px;
+        border: none;
+        border-radius: 5px;
+        color:white;
+        background-color:rgb(15, 17, 15);
+    
+      
+      }
+    
+     </style>
+</head>
+ <body>
+    <form id="form">
+ <p>Already have an account?<a href="forms.html">Sign In</a></p>
+    
+    <h2> Sign Up</h2>
+    <label for= "name">Name:</label><br>
+        <input name="name" type="text" placeholder="Enter Name" required class="input"/>
+        <br>
+        <br> 
+        <label for="email">Email:</label><br>
+        <input name="email" type="email" placeholder="Enter Email Address"required class="input"/>
+        <br>
+        <br>
+        <label for="Password">Password</label><br>
+        <input name="Password"type="Password" placeholder="Enter  your password" required class="input"/>
+        <br>
+        <br>
+        <input type="checkbox" /> I've Read And Agree With<b>The Terms Of Service</b> and Our <b>Privacy Policy</b>
+        <br>
+        <br>
+        <button type="sign in"> Sign Up</button>
+        <br>
+        <p>______________________or sign up With__________________</p>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAeFBMVEX///8AAADT09Pi4uLDw8Pq6ur6+vp+fn5CQkLv7++ysrKGhobd3d2YmJhaWlohISGsrKx3d3dnZ2eOjo7Nzc3W1tZUVFSVlZUXFxefn59vb28SEhI1NTVHR0e4uLivr68sLCw6OjpfX19ERES+vr4mJiYuLi5ycnJyn8dVAAAE6UlEQVR4nO3daXeiMBQGYCyKK+4LuLTSWvv//+FUa3uGGW5uEtLcwHmfz4Mn76Ak3CyNIgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgCBtntP+dHA9z7LZ9Vhs+7v5OpZukzPxaHHtVJruuol062rrLrLqdN8GeZPv5XqvTvdwzIfSLbUyzA9a+e6WT9LNNRYv9ON9fVu70k02Ei8N890Ua+lma0v6Fvlupj3ppuuZW+a76Us3XkNvWyNgp3MI/qs6qpXvZiwdQc3mCfOvY8C9YzxzEPBTsJ3jxU2+TyPpKNVyZwE7nVQ6TJWVw4BB9hpjlwFDfJ62PuCu7QHrDNQaEXDd9oBx2wNGuiOZ2Wmx2uV5Ot4PmhVQqxizzTel4Wbv8lH1z0LsB6NnPt7ppbJouPmviwnyDg7ZfIsJfXX5IRzkHYy4F94F8y6UBn4Ho64630Bx/x6G06ADRuqaaK71GaOQA6aqfBl/A7/Eh2ADJqqAJ/1Zl+QcaMBIVRhdSjfOBVVP0YqAqpfCV+m2uUEHHEg3zQ36rfDQ/KnduyOZULebCNyEDBhkLdAC+Zw5SrfMlbZ/R6MnKuBCumWukDXugKeOzFBP0jBfYy2QI7aGzMXzqFfflgzXIvpn2KxlMSonIiF33fDJhkQHRJQv9tx1dhPF7z4ilfWIpjxzFzKlK4qPTGVUf88+SS0T+n9CE5XuGXuhZUL/yzOIItuUvdAyIfvtd46oQa3YCy0T6lVeXSIWP83ZCy0T+q82Tqsbwvf3lgk/PGQqIyZk+AeCZUL/xUliSPNrCf0Pd988J+Qf0q4R95Bf/2qZ8OQhUxnxO/y1J83WQ6Yyord4YS9szO+QWIDBV0obk5AolvJ1tsb0FsRy2YK90DKh/xIltYqGnZKxTMgPeF2j3g/ZcoNlQn7A6xpVTGRb0pi3J6pOw/Zblgk3PjKVUbU27odouWVBYKqAqpdyWyWSWIn4fR+8ZCqjvm01B5DEcmO+F3KPnLeot3GZ+GqITPdQc09sTVjpvfpDBR6livnDOqVNasm4yI52cg64zhCS+m9z1mojVMIafRe1ElBoCRm5bO9s/ZHUGiSh3Xrk17Szs/1I6gOl5pXPZETLWQbqVyi2QEexpdJqXRu5yMp/Sf9BsULYagxC7r2RW/zgdn3pK/VZgks5VWuEjUu49C5bkQHNg+oAE8OIij2av9N2PcotQW8mjxvFPmn/JRrNhnVMBjeqsxhk18kpN1xoL6WNiZOy7qR3YjB78wY6t1G58caua3WJ27u25Dqzi3oLquyv8Ibff7hX1VBHxCvvN4kCzb80TqQZzKufFmv+uCzJvvCH1j7gYrUupRxucmKxQ4n/acNKunu5s2I5XqW7cX9a6B7lFsiKamoVX31BfEdvnJ6p8JeAVv07PRfjR1A7U5yebfItkB/hg+kxiRpC23pTeQhEHeEdTWd7WGJjAnID6BYEdHleW7Bn0k0MTp1VycLdWZTojDVZBkcVCHDQ91vPCXjSo5YwaDoIrLow9VInoPwrvY7EeoAzaMzp5bHVEycL5mVJx8T4NNpjo/Ld9IyO+9yGOYjhXDRv5DkNt4vnJBe2TrVt9B9HuJvM90StKlum66DHLwaSzfPuY1tc32dZls3Oxes4vWzaEg4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFrlD3C+OTv0qVBgAAAAAElFTkSuQmCC" width="40px"/>
+        <img src="data:image/png;base64,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" width="40px"/>
+        </form>
+        </body>
+        </html>
+
+
+        
+        
+        
+
+    
+
+
+
+        
+    
